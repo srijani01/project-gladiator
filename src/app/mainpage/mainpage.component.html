@@ -16,18 +16,18 @@
   
 
     
-    <section class="our-packages">
+    <!-- <section class="our-packages">
         
       <div>
           <figure>
-              <img src="/page/IMAGE/shoe.jpg" alt="">
+              <img class=" img-fluid"src="assets/images/heels.jpg" alt=""/>
               <figcaption>Shoe</figcaption>
               <p>This is the Shoe</p> 
               <figcaption>&#8377; 5,000</figcaption>
-              <button class="button" [routerLink]="['/login']">BUY NOW</button>
+              <button class="button" [routerLink]="['/userlogin']">BUY NOW</button>
           </figure>
           <figure>
-              <img src="/page/IMAGE/WATCH.jpg" alt="">
+              <img src="assets/images/jordan.jpg" alt="">
               <figcaption>Watch</figcaption>
               <p>This is the watch</p>
               <figcaption>&#8377; 2,000</figcaption>
@@ -41,7 +41,7 @@
               <figcaption>&#8377; 30,000</figcaption>
               <button class="button" [routerLink]="['/checkout']">BUY NOW</button>
           </figure>
-      </div>
+      </div> -->
       <!-- <div>
           <figure>
               <img src="/page/IMAGE/TV.jpg" alt="">
@@ -65,12 +65,96 @@
               <button class="button">BUY NOW</button>
           </figure>
       </div> -->
-    </section>
-    <div class="test">
-      <p>ELIGIBILITY</p>
-      <p>Terms and Conditions</p>
-      <p>Charges for registration and EMI card details</p>
+    <!-- </section> -->
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" src="assets/images/table.jpg" alt="Card image cap" >
+                    <div class="card-body">
+                      <h5 class="card-title">Table</h5>
+                      <p class="card-text">Rs. 7000</p>
+                      <a href="#" class="btn btn-primary">Book</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" src="assets/images/powerbank.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Powerbank</h5>
+                      <p class="card-text">Rs. 5000 </p>
+                      <a href="#" class="btn btn-primary">Book</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" src="assets/images/oneplusnord.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">One Plus Nord</h5>
+                      <p class="card-text">Rs. 40000</p>
+                      <a href="#" class="btn btn-primary">Book</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" src="assets/images/officechair.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">OfficeChair</h5>
+                      <p class="card-text">Rs. 2000</p>
+                      <a href="#" class="btn btn-primary">Book</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
     </div>
+    <br><br><br>
+
+    <div class="container text-center">
+        <button [routerLink]="['/product-list']" class="btn btn-primary">Show More Products</button>
+    </div><br><br><br><br>
+    <div class="container">
+        <div class="test">
+            <p>ELIGIBILITY</p>
+            <p>
+              <ol id="uleligibility">
+                  <li>You are 18 years of age or over.</li>
+                  <li>Indian citizens only can apply.</li>
+                  <li>
+                    Customers with a prior relationship should be earning Rs. 25,000 per
+                    month.
+                  </li>
+                  <li>
+                    New applicants should be earning Rs. 50,000 per month to avail this
+                    service
+                  </li>
+                  <li>The information supplied by you is true and correct.</li>
+                </ol>
+            <!-- </p> -->
+            
+            <p>Terms and Conditions</p>
+            <p>
+              <ol>
+                  <li>
+                    Joining fee is a fee that a issuer may require you to pay annually to
+                    use its credit card.
+                  </li>
+                  <li>A late fee is a charge for any payment made after the due date.</li>
+                  <li>Joining Fees for Gold Membership will be Rs 500,which will be automatically debited from your card limit</li>
+                  <li>Joining Fees for Titanium Membership will be Rs 1000,which will be automatically debited from your card limit</li>
+        
+                </ol>
+            <!-- </p> -->
+            <!-- <p>Charges for registration and EMI card details</p> -->
+          </div>
+
+    </div>
+    
     
     <footer class="main-footer">
       <span><h5>Finance © 2022</h5></span>

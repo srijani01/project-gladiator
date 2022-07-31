@@ -1,36 +1,46 @@
-<!-- <p>product-list works!</p>
+<!-- <p>product-list works!</p>-->
 
- <div class="container">
-    <div class="row">
-        <div class="col-md-3">
-            <img src="src\images\sneaker.jpg" alt="sneakers">
-            <p>Shoes</p>
-            <button>Book Now</button>
-        </div>
-        <div class="col-md-3">
-            <img src="src\images\heels.jpg" alt="heels">
-            <p>Shoes2</p>
-            <button>Book Now</button>
-        </div>
-        <div class="col-md-3">
-            <img src="src\images\jordan.jpg" alt="jordan">
-            <p>Shoes3</p>
-            <button>Book Now</button>
-        </div>
-        <div class="col-md-3">
-            <img src="src\images\nike.jpg" alt="nike">
-            <p>Shoes4</p>
-            <button>Book Now</button>
-        </div>
-    </div>
-</div> 
+<div>
+      <div id="navbar">
+        <ul id="links">
+        
+      
+        
+          <li class="link" style="border: none;background-color: rgb(224, 112, 112);font-size: 17px; font-weight: bold;font-family: 'Times New Roman', Times, serif;" >Welcome! </li>
+          <li class="link"  [routerLink]="['/dashboard']">Show History</li>
+          <li class="link"  [routerLink]="['/mainpage']">Logout</li>
+          
+        </ul>
+        <br style="clear: both" />
+</div>
+ 
 <div class="container">
     <div class="row">
         <div class="col-md-3">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top img-fluid" src="assets/images/nike.jpg" alt="Card image cap" >
+                <img class="card-img-top img-fluid" src="assets/images/camera.jpg" alt="Card image cap" >
                 <div class="card-body">
-                  <h5 class="card-title">Nike Shoes</h5>
+                  <h5 class="card-title">Camera</h5>
+                  <p class="card-text">Rs. 69999</p>
+                  <a [routerLink]="['/productinfo']" class="btn btn-primary">Book</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top img-fluid" src="assets/images/laptop.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">Rs. 45000 </p>
+                  <a href="#" class="btn btn-primary">Book</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top img-fluid" src="assets/images/lenovo_mouse.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Lenovo Mouse</h5>
                   <p class="card-text">Rs. 2999</p>
                   <a href="#" class="btn btn-primary">Book</a>
                 </div>
@@ -38,30 +48,10 @@
         </div>
         <div class="col-md-3">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top img-fluid" src="assets/images/jordan.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid" src="assets/images/lenovo_tab.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">jordan</h5>
-                  <p class="card-text">Rs. 2999</p>
-                  <a href="#" class="btn btn-primary">Book</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top img-fluid" src="assets/images/sneaker.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Sneakers</h5>
-                  <p class="card-text">Rs. 2999</p>
-                  <a href="#" class="btn btn-primary">Book</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top img-fluid" src="assets/images/heels.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Nike Shoes</h5>
-                  <p class="card-text">Rs. 2999</p>
+                  <h5 class="card-title">Lenovo tab</h5>
+                  <p class="card-text">Rs. 20000</p>
                   <a href="#" class="btn btn-primary">Book</a>
                 </div>
             </div>
@@ -69,10 +59,10 @@
     </div>    
     <br><br><br><br>
 
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-md-3">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top img-fluid" src="assets\images\heels.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid" src="assets\images\Mi_band.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Nike Shoes</h5>
                   <p class="card-text">Rs. 2999</p>
@@ -110,25 +100,13 @@
                 </div>
             </div>
         </div>
-    </div>    
-</div> -->
+    </div>   --> 
+</div>  
 
 
-<section id="body">
-    <div>
-      <div id="navbar">
-        <ul id="links">
-        
-      
-        
-          <li class="link" style="border: none;background-color: rgb(224, 112, 112);font-size: 17px; font-weight: bold;font-family: 'Times New Roman', Times, serif;" >Welcome! </li>
-          <li class="link"  [routerLink]="['/dashboard']">Show History</li>
-          <li class="link"  [routerLink]="['/mainpage']">Logout</li>
-          
-        </ul>
-        <br style="clear: both" />
-      </div>
-  <h1 style="text-align: center;">Product List</h1>
+<!-- <section id="body"> -->
+    
+  <!-- <h1 style="text-align: center;">Product List</h1>
   <label for="cardno">Search Product: </label>
          <input type="text" id="cardno" name="cardno"   />
          <button class="button" >Search</button><br><br>
@@ -147,5 +125,5 @@
       </div>
     </section>
     
-  </div>
+  </div> -->
   

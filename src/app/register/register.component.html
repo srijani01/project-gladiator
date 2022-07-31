@@ -1,3 +1,16 @@
+<div>
+    <div id="navbar">
+      <ul id="links">
+      
+    
+      
+        <li class="link" style="border: none;background-color: rgb(224, 112, 112);font-size: 17px; font-weight: bold;font-family: 'Times New Roman', Times, serif;" >Welcome! </li>
+        <!-- <li class="link"  [routerLink]="['/dashboard']">Show History</li> -->
+        <li class="link"  [routerLink]="['/mainpage']">Home</li>
+        
+      </ul>
+      <br style="clear: both" />
+</div>
 <div class="container">
     <header>Registration</header>
 
@@ -38,7 +51,19 @@
                    
                     <div class="input-field">
                         <label>Password</label>
-                        <input type="password" placeholder="Enter a Password" required>
+                        <input type="password" placeholder="Enter a Password" required
+                        type="text"
+                        id="userName"
+                        name="userName"
+                        
+                        minlength="5"
+                        pattern="^[A-Za-z0-9]*$"
+                        >
+                    </div>
+
+                    <div class="input-field">
+                        <label>Confirm Password</label>
+                        <input type="password" placeholder="Re-enter the Password" required>
                     </div>
                     
                 </div>
@@ -55,8 +80,15 @@
 
                 <div class="fields">
                     <div class="input-field">
-                        <label>Card Type</label> 
-                        <input type="text" placeholder="Enter Card type" required>
+                        <label>IFSC</label> 
+                        <!-- <input type="text" placeholder="Enter IFSC" required> -->
+                        <select name="ifsc" id="ifsc" placeholder="Select IFSC">
+                          <option value="SBIN0000371">SBIN0000371</option>
+                          <option value="ICIC0000151">ICIC0000151</option>
+                          <option value="HDFC0000001">HDFC0000001</option>
+                          <option value="SCBL0036001">SCBL0036001</option>
+                          <option value="BKID0008400">BKID0008400</option>
+                        </select>
                     </div>
                     
                    
@@ -82,7 +114,7 @@
                         <input class="form-check-input" type="radio" name="Card Type" id="exampleRadios2" value="option2">
                         <label class="form-check-label" for="exampleRadios2">
                             
-                         Platinum
+                         Titanium
                         </label>
                         </div>
                         <br>
@@ -98,3 +130,81 @@
     </form>
 </div>
 <router-outlet></router-outlet>
+
+<!-- <div>
+    <label for="userName">User Name</label>
+    <input
+      type="text"
+      id="userName"
+      name="uname"
+      #Nuname="ngModel"
+      [(ngModel)]="uname"
+      required
+      minlength="5"
+      pattern="^[A-Za-z0-9]*$"
+    />
+    <div [hidden]="Nuname.valid || Nuname.pristine" class="alert-danger">
+      <label></label>
+      <span>*UserName must contain 5 char </span>
+      <br />
+      <label></label>
+      <span>(Can only contain aplphabets & numbers )</span>
+    </div>
+  </div>
+
+  <div>
+    <label for="name">Password</label>
+    <input
+      type="password"
+      id="password"
+      name="upass"
+      [(ngModel)]="upass"
+      #Nupass="ngModel"
+      required
+      minlength="8"
+      pattern="(?=[^A-Z][A-Z])(?=[^a-z][a-z])(?=[^0-9]*[0-9]).{8,}"
+    />
+    <div [hidden]="Nupass.valid || Nupass.pristine" class="alert-danger">
+      <label></label>
+      <span>*Password must contain 8 char </span>
+      <br />
+      <label></label>
+      <span>(Minimum 1 upper lower number symbol each )</span>
+    </div>
+  </div>
+
+  <div>
+    <label for="confirmPassword">Confirm Password</label>
+    <input
+      type="password"
+      id="confirmPassword"
+      name="ucpass"
+      [(ngModel)]="ucpass"
+      #Nnucpass="ngModel"
+      required
+      minlength="8"
+      pattern="(?=[^A-Z][A-Z])(?=[^a-z][a-z])(?=[^0-9]*[0-9]).{8,}"
+    />
+    <div [hidden]="Nnucpass.valid || Nnucpass.pristine" class="alert-danger">
+      <label></label>
+      <span>*Password must contain 8 char </span>
+      <br />
+      <label></label>
+      <span>(Minimum 1 upper lower number symbol each )</span>
+    </div>
+    <div class="alert-danger">
+      <label></label>
+      <span>*Password does not match</span>
+    </div> 
+  </div>
+
+  <div>
+    <label for="address">Address</label>
+    <input
+      type="text"
+      id="address"
+      name="address"
+      [(ngModel)]="address"
+      required
+    />
+  </div> -->

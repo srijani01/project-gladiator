@@ -1,11 +1,11 @@
-
+/* 
 .our-packages figure{
     box-shadow: 0 0 10px black;
     width: 300px;
     display: inline-block;
     padding: 10px;
     margin: 20px;
-    background-color: lightcyan;
+    /* background-color: lightcyan; 
     align-items: right;
 }
 .our-packages figure img{
@@ -28,7 +28,7 @@ nav a{
   padding: 10px 25px;
   display: inline-block;
 
-} */
+} 
 
 .pro{
   width:50%;
@@ -43,23 +43,42 @@ img{
 {
   padding-top: 20px;
   
-}
+} */
 .main-footer{
     background-color: gray;
     color: whitesmoke;
     padding: 20px;
     margin-top: 20px;
+    width: 100%;
 }
 .test
 {
-  text-align: center;
+  /* text-align: center; */
   text-decoration: none;
-  color: red;
+  color:green;
 }
 .button{
     padding: 10px 25px;
     margin: 10px;
    
+} 
+
+
+.container{
+  background: rgb(249, 251, 252);
+  padding: 50px 50px 50px 70px;
+  width: 100%;
+
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  
+
+}
+.card-img-top{
+  width: 100%;
+  max-height: 300px;
 }
 
 #navbar {
@@ -80,4 +99,20 @@ img{
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+#eligibility {
+  /* border: 1px solid rgb(224, 214, 214); */
+  margin-top: 20px;
+}
+ol {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+li {
+  list-style-type: disc;
+}
+#termsandconditions {
+  /* border: 1px solid rgb(224, 214, 214); */
+  margin-top: 20px;
 }

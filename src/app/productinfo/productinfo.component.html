@@ -1,1 +1,77 @@
-<p>productinfo works!</p>
+<div>
+  <div id="navbar">
+    <ul id="links">
+    
+  
+    
+      <li class="link" style="border: none;background-color: rgb(224, 112, 112);font-size: 17px; font-weight: bold;font-family: 'Times New Roman', Times, serif;" >Welcome! </li>
+      <li class="link"  [routerLink]="['/dashboard']">Show History</li>
+      <li class="link"  [routerLink]="['/mainpage']">Logout</li>
+      
+    </ul>
+    <br style="clear: both" />
+</div>
+
+<main class="container">
+ 
+    <!-- Left Column / Headphones Image -->
+    <div class="left-column">
+      <img  src="assets/images/camera.jpg" alt="camera nikon">
+    </div>
+   
+   
+    <!-- Right Column -->
+    <div class="right-column">
+   
+      <!-- Product Description -->
+      <div class="product-description">
+        <span>Camera</span>
+        <h1>Nikon</h1>
+        <p>The Canon EOS 5D was developed to meet the needs of advanced amateurs seeking a high-performance 35 mm full-frame image-sensor-equipped digital SLR camera that is smaller and lighter than professional models. Featuring a full-frame 35 mm CMOS sensor boasting 12.8 million effective pixels, the EOS 5D realizes outstanding image resolution, rich color gradation, and a wide ISO sensitivity range (ISO 100-1600, L:50, H:3200). The 35 mm sensor size also allows users to fully utilize the angles of view offered by the entire range of Canon EF lenses*, permitting unrestricted lens performance for a shooting feel on par with film SLR cameras. Moreover, the new camera incorporates Canon’s proprietary DIGIC II imaging engine, providing detailed and natural color reproduction, and ultra high-speed image processing to meet the needs of advanced users.</p>
+      </div>
+   
+      <!-- Product Configuration -->
+      <!-- <div class="product-configuration">
+   
+        Product Color 
+        <div class="product-color">
+          <span>Color</span>
+   
+          <div class="color-choose">
+            <div>
+              <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+              <label for="red"><span></span></label>
+            </div>
+            <div>
+              <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+              <label for="blue"><span></span></label>
+            </div>
+            <div>
+              <input data-image="black" type="radio" id="black" name="color" value="black">
+              <label for="black"><span></span></label>
+            </div>
+          </div>
+   
+        </div> -->
+   
+        <!-- Cable Configuration -->
+        <!-- <div class="cable-config">
+          <span>Cable configuration</span>
+   
+          <div class="cable-choose">
+            <button>Straight</button>
+            <button>Coiled</button>
+            <button>Long-coiled</button>
+          </div>
+   
+          <a href="#">How to configurate your headphones</a>
+        </div> -->
+      <!-- </div> -->
+   
+      <!-- Product Pricing -->
+      <div class="product-price">
+        <span>INR 69999</span>
+        <a [routerLink]="['/checkout']" class="cart-btn">BUY NOW</a>
+      </div>
+    </div>
+  </main>
