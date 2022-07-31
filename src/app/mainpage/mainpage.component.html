@@ -1,0 +1,81 @@
+<!-- <nav class=navbar>
+    <a [routerLink]="['/register']">REGISTER</a>
+    <a [routerLink]="['/login']">Login</a>
+    </nav> -->
+    
+        <div id="navbar">
+            <ul id="links">
+              <li class="link"  [routerLink]="['/mainpage']">Home</li>
+              <li class="link"  [routerLink]="['/userlogin']">Admin Login </li>
+              <li class="link" [routerLink]="['/register']">User Register</li>
+              <li class="link" [routerLink]="['/userlogin']">User Login</li>
+              <li class="link" [routerLink]="['/dashboard']">Dashboard</li>
+            </ul>
+            <br style="clear: both" />
+        </div>
+  
+
+    
+    <section class="our-packages">
+        
+      <div>
+          <figure>
+              <img src="/page/IMAGE/shoe.jpg" alt="">
+              <figcaption>Shoe</figcaption>
+              <p>This is the Shoe</p> 
+              <figcaption>&#8377; 5,000</figcaption>
+              <button class="button" [routerLink]="['/login']">BUY NOW</button>
+          </figure>
+          <figure>
+              <img src="/page/IMAGE/WATCH.jpg" alt="">
+              <figcaption>Watch</figcaption>
+              <p>This is the watch</p>
+              <figcaption>&#8377; 2,000</figcaption>
+            
+              <button class="button" [routerLink]="['/productinfo']">BUY NOW</button>
+          </figure>
+          <figure>
+              <img src="/page/IMAGE/FRIDGE.jpg" alt="">
+              <figcaption>Fridge</figcaption>
+              <p>This is the fridge</p>
+              <figcaption>&#8377; 30,000</figcaption>
+              <button class="button" [routerLink]="['/checkout']">BUY NOW</button>
+          </figure>
+      </div>
+      <!-- <div>
+          <figure>
+              <img src="/page/IMAGE/TV.jpg" alt="">
+              <figcaption>TV</figcaption>
+              <p>This is the TV</p>
+              <figcaption>&#8377; 50,000</figcaption>
+              <button class="button">BUY NOW</button>
+          </figure>
+          <figure>
+              <img src="/page/IMAGE/AC.jpg" alt="">
+              <figcaption>AC</figcaption>
+              <p>This is the AC</p>
+             <figcaption>&#8377; 70,000</figcaption>
+              <button class="button">BUY NOW</button>
+          </figure>
+          <figure>
+              <img src="/page/IMAGE/BED.jpg" alt="">
+              <figcaption>BED</figcaption>
+              <p>This is the BED</p> 
+              <figcaption>&#8377; 6,000</figcaption>
+              <button class="button">BUY NOW</button>
+          </figure>
+      </div> -->
+    </section>
+    <div class="test">
+      <p>ELIGIBILITY</p>
+      <p>Terms and Conditions</p>
+      <p>Charges for registration and EMI card details</p>
+    </div>
+    
+    <footer class="main-footer">
+      <span><h5>Finance © 2022</h5></span>
+      <span>All Rights Reserved</span><br>
+      <span>Developed by Team11 @ LTI</span>
+    </footer>
+
+    <router-outlet></router-outlet>

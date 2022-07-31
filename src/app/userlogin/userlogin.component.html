@@ -1,0 +1,82 @@
+<div id="navbar">
+    <ul id="links">
+      <li class="link"  [routerLink]="['/mainpage']">Home</li>
+      <li class="link"  [routerLink]="['/adminlogin']">Admin Login </li>
+      <li class="link" [routerLink]="['/register']">User Register</li>
+      <li class="link" [routerLink]="['/userlogin']">User Login</li>
+    </ul>
+    <br style="clear: both" />
+  </div>
+  <section id="body">
+      <form>
+        <h2>Login</h2>
+        <div>
+          <label for="userName">USER NAME</label>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            
+            minlength="5"
+            pattern="^[A-Za-z0-9]*$"
+            
+          
+          />
+          <div class="alert-danger">
+            <label></label>
+            <span>*UserName must contain 8 char </span>
+            <br />
+            <label></label>
+            <span>(Can only contain aplphabets & numbers )</span>
+          </div>
+        </div>
+        <div>
+          <label for="password">PASSWORD</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            
+           
+            minlength="8"
+            
+          />
+          <div class="alert-danger">
+            <label></label>
+            <span>*Password must contain 8 characters</span><br />
+          </div>
+        </div>
+        <div style="display: flex">
+          <button
+            
+            type="submit"
+            
+          >
+            Login
+          </button>
+        </div>
+        <div
+          class="alert-danger"
+          
+          style="text-align: center"
+        >
+          Username does not exists
+        </div>
+        <div
+          class="alert-danger"
+          
+          style="text-align: center"
+        >
+          Password incorrect
+        </div>
+        <div style="text-align: center">
+          <a href="#" style="display: block" [routerLink]="['/forgotpassLink']"
+            >Forgot Password</a
+          >
+          <p>
+            New User? <a href="" [routerLink]="['/registerLink']">Register Here</a>
+          </p>
+        </div>
+      </form>
+    </section>
+    

@@ -1,0 +1,151 @@
+<!-- <p>product-list works!</p>
+
+ <div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="src\images\sneaker.jpg" alt="sneakers">
+            <p>Shoes</p>
+            <button>Book Now</button>
+        </div>
+        <div class="col-md-3">
+            <img src="src\images\heels.jpg" alt="heels">
+            <p>Shoes2</p>
+            <button>Book Now</button>
+        </div>
+        <div class="col-md-3">
+            <img src="src\images\jordan.jpg" alt="jordan">
+            <p>Shoes3</p>
+            <button>Book Now</button>
+        </div>
+        <div class="col-md-3">
+            <img src="src\images\nike.jpg" alt="nike">
+            <p>Shoes4</p>
+            <button>Book Now</button>
+        </div>
+    </div>
+</div> 
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top img-fluid" src="assets/images/nike.jpg" alt="Card image cap" >
+                <div class="card-body">
+                  <h5 class="card-title">Nike Shoes</h5>
+                  <p class="card-text">Rs. 2999</p>
+                  <a href="#" class="btn btn-primary">Book</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top img-fluid" src="assets/images/jordan.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">jordan</h5>
+                  <p class="card-text">Rs. 2999</p>
+                  <a href="#" class="btn btn-primary">Book</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top img-fluid" src="assets/images/sneaker.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Sneakers</h5>
+                  <p class="card-text">Rs. 2999</p>
+                  <a href="#" class="btn btn-primary">Book</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top img-fluid" src="assets/images/heels.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Shoes</h5>
+                  <p class="card-text">Rs. 2999</p>
+                  <a href="#" class="btn btn-primary">Book</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <br><br><br><br>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top img-fluid" src="assets\images\heels.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Shoes</h5>
+                  <p class="card-text">Rs. 2999</p>
+                  <a href="#" class="btn btn-primary">Book</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top img-fluid" src="assets\images\heels.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Shoes</h5>
+                  <p class="card-text">Rs. 2999</p>
+                  <a href="#" class="btn btn-primary">Book</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top img-fluid" src="assets\images\heels.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Shoes</h5>
+                  <p class="card-text">Rs. 2999</p>
+                  <a href="#" class="btn btn-primary">Book</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top img-fluid "src="assets\images\heels.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Nike Shoes</h5>
+                  <p class="card-text">Rs. 2999</p>
+                  <a href="#" class="btn btn-primary">Book</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div> -->
+
+
+<section id="body">
+    <div>
+      <div id="navbar">
+        <ul id="links">
+        
+      
+        
+          <li class="link" style="border: none;background-color: rgb(224, 112, 112);font-size: 17px; font-weight: bold;font-family: 'Times New Roman', Times, serif;" >Welcome! </li>
+          <li class="link"  [routerLink]="['/dashboard']">Show History</li>
+          <li class="link"  [routerLink]="['/mainpage']">Logout</li>
+          
+        </ul>
+        <br style="clear: both" />
+      </div>
+  <h1 style="text-align: center;">Product List</h1>
+  <label for="cardno">Search Product: </label>
+         <input type="text" id="cardno" name="cardno"   />
+         <button class="button" >Search</button><br><br>
+         
+  <div class="container">
+  <section class="section" >
+      <img src="assets/images/heels.jpg" class="image" />
+      <div class="content">
+    
+        
+        <label class="lb1"> PRODUCT NAME :</label><br><br>
+        <label class="lb1"> PRODUCT DETAILS :</label><br><br>
+        <label class="lb1"> COST :</label><br><br>
+        <button class="button" [routerLink]="['/productinfo']">Buy Now</button>
+  
+      </div>
+    </section>
+    
+  </div>
+  
