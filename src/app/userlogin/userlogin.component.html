@@ -1,7 +1,7 @@
 <div id="navbar">
     <ul id="links">
       <li class="link"  [routerLink]="['/mainpage']">Home</li>
-      <li class="link"  [routerLink]="['/adminlogin']">Admin Login </li>
+      <li class="link"  [routerLink]="['/userlogin']">Admin Login </li>
       <li class="link" [routerLink]="['/register']">User Register</li>
       <li class="link" [routerLink]="['/userlogin']">User Login</li>
     </ul>
@@ -79,4 +79,4 @@
         </div>
       </form>
     </section>
-    
+    <router-outlet></router-outlet>
