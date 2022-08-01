@@ -14,6 +14,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { BillComponent } from './bill/bill.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
 import { IndexComponent } from './index/index.component';
+import { IntermediateComponent } from './intermediate/intermediate.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { IndexComponent } from './index/index.component';
     CheckoutComponent,
     BillComponent,
     UserloginComponent,
-    IndexComponent
+    IndexComponent,
+    IntermediateComponent
   ],
   imports: [
     BrowserModule,

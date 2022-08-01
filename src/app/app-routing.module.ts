@@ -10,6 +10,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { BillComponent } from './bill/bill.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
 import { IndexComponent } from './index/index.component';
+import { IntermediateComponent } from './intermediate/intermediate.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'index',pathMatch: 'full'},
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path:'checkout', component:CheckoutComponent},
   {path:'bill', component:BillComponent},
   {path:'userlogin', component:UserloginComponent},
-  {path:'index', component:IndexComponent}
+  {path:'index', component:IndexComponent},
+  {path:'intermediate',component:IntermediateComponent}
 ];
 
 @NgModule({
