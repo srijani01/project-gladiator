@@ -1,4 +1,4 @@
-html, body {
+.html, .body {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -13,12 +13,14 @@ html, body {
   }
 
   .left-column {
-    width: 65%;
+    width: 100px;
     position: relative;
+    height: 100px;
+    /* background-color: #1bdfe6; */
   }
    
   .right-column {
-    width: 35%;
+    width: 50%;
     margin-top: 60px;
   }
   .left-column img {
