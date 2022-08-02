@@ -1,50 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
-/* 
-.our-packages figure{
-    box-shadow: 0 0 10px black;
-    width: 300px;
-    display: inline-block;
-    padding: 10px;
-    margin: 20px;
-    /* background-color: lightcyan; 
-    align-items: right;
-}
-.our-packages figure img{
-    width: 100%;
-}
-.our-packages figure figcaption{
-    font-size: 30px;
-}
-.our-packages figure p{
-    font-size: 18px;
-}
-/* .navbar{
-  
-  text-align: right;
-  font-size: 20px;
-  background-color: white;
- }
-nav a{
-  text-decoration: none;
-  padding: 10px 25px;
-  display: inline-block;
 
-} 
-
-.pro{
-  width:50%;
-  }
-img{
-  float:left;
-  width:100px;
-  height:100px;
-  padding: 100px 100px 0 0;
-}
-.ab
-{
-  padding-top: 20px;
-  
-} */
 .main-footer{
     background-color: gray;
     color: whitesmoke;
@@ -101,6 +56,13 @@ img{
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 5px;
+}
+.navbar-brand{
+  font-family: 'Poppins',sans-serif;
+  font-size: 25px;
+  padding-top: 20px;
+  font-weight: bolder;
+  color: rgb(30, 115, 243);
 }
 
 #eligibility {
